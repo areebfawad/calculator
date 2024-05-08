@@ -1,0 +1,119 @@
+.calculator-container {
+    position: relative;
+    background-color: transparent; /* Dark background */
+    color: #00ff00; /* Bright green text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 101vh;
+  }
+  .heading {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #00ff00; /* Black color */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Added transition */
+  }
+  
+  .heading:hover {
+    color: #0cf12b; opacity: 0.4;/* Bright green on hover */
+    text-decoration: underline; /* Underline on hover */
+  }
+  .theme-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #777;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #00ff00;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  .calculator {
+    width: 300px;
+    background-color: #333; opacity: 0.8;/* Dark gray */
+    border-radius: 8px;
+    padding: 20px;
+  }
+  
+  .display {
+    background-color: #1a1a1a;
+    color: #00ff00;
+    text-align: right;
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  button {
+    background-color: #444; /* Dark gray */
+    color: #00ff00;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: black; /* Dark gray on hover */
+  }
+   .live-background video{ position: absolute; right: 0; bottom: 0; z-index: -1; }  @media(min-aspect-ratio:16/9){.live-background  video {width: 150%; height: auto; }}  
+   /* .live-background video{ position: absolute; right: 0; bottom: 0; z-index: -1; }  @media(min-aspect-ratio:16/9){.  video {width: 100%; height: auto; }}   */
+ 
+ 
